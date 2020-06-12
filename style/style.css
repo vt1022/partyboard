@@ -262,3 +262,28 @@ html {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content auto min-content;
+      grid-template-rows: -webkit-min-content auto -webkit-min-content;
+      grid-template-rows: min-content auto min-content;
+  height: 100vh;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+}
+
+.whiteboard {
+  height: 100%;
+  width: 100%;
+}
+
+.tools {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
