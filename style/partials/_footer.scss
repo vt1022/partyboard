@@ -1,0 +1,8 @@
+.footer {
+  position: absolute;
+}
+
+.copyright {
+  @include fontSize(12);
+  margin: 3px 0;
+}

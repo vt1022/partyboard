@@ -1,5 +1,16 @@
 body {
   display: grid;
   grid-template-rows: min-content auto min-content;
+  justify-items: center;
   height: 100vh;
+  overflow: hidden;
+}
+
+.btn {
+  @include fontSize(25);
+  display: inline-block;
+  margin: 0;
+  border: 1px solid grey;
+  // padding: 0;
+  background: none;
 }

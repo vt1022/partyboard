@@ -8,33 +8,33 @@
 </head>
 <body>
   
-  <header>
-    <h1>Party Board</h1>
+  <header class="header">
+    <h1 class="title">Party Board</h1>
   </header>
   
   <main class="main">
     <canvas class="whiteboard"></canvas>
 
     <div class="tools">
-      <div class="sizes">
-        <button data-size="small" class="btn sizes__brush">small</button>
-        <button data-size="medium" class="btn sizes__brush">medium</button>
-        <button data-size="large" class="btn sizes__brush">large</button>
+      <div class="tools__sizes">
+        <button data-size="3" class="btn sizes__brush">small</button>
+        <button data-size="12" class="btn sizes__brush">medium</button>
+        <button data-size="24" class="btn sizes__brush">large</button>
       </div>
-      <div class="colours">
+      <div class="tools__colours">
+        <button data-colour="#ffeeee" class="btn colours__brush">E</button>
+        <button data-colour="#000000" class="btn colours__brush">0</button>
         <button data-colour="#ff0000" class="btn colours__brush">1</button>
         <button data-colour="#40ff00" class="btn colours__brush">2</button>
         <button data-colour="#00ffff" class="btn colours__brush">3</button>
         <button data-colour="#4000ff" class="btn colours__brush">4</button>
         <button data-colour="#ff00ff" class="btn colours__brush">5</button>
       </div>
+      <div class="tools__others">
+        <button class="btn others__clear">clear</button>
+      </div>
     </div>
-  </main>
-
-  <footer>
-    <p>copyright 2020</p>
-  </footer>
-
+  </main>  
 
   <!-- script -->
   <script src="./script.js"></script>
